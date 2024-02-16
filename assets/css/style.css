@@ -79,7 +79,6 @@ body {
   color: #fff;
   font-family: "Roboto";
   font-weight: 400;
-  margin-bottom: 5000px;
   background-color: #07141b; }
 
 .alessio {
@@ -156,10 +155,11 @@ a:hover {
   position: absolute;
   bottom: auto;
   left: -13%;
-  right: auto; }
+  right: auto;
+  top: 0%; }
 
 .home-gradient.right {
-  opacity: .7;
+  opacity: .5;
   filter: blur(150px);
   margin-top: 10rem;
   top: 10%;
@@ -167,12 +167,32 @@ a:hover {
   left: auto;
   right: 0%; }
 
+.contact-gradient {
+  width: 20rem;
+  height: 20rem;
+  background-color: #2cf8ff;
+  filter: blur(200px);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  bottom: auto;
+  left: -13%;
+  right: auto;
+  z-index: -1; }
+
+.contact-gradient-right {
+  width: 20rem;
+  /* Set the width of the div */
+  height: 20rem;
+  /* Set the height of the div to cover the entire viewport */
+  background-color: #2cf8ff;
+  filter: blur(200px);
+  border-radius: 30%;
+  position: absolute;
+  right: 0; }
+
 .mt {
   margin-top: 500px !important; }
-
-.footer {
-  position: sticky;
-  bottom: 0; }
 
 .code {
   overflow-y: auto;
@@ -194,6 +214,10 @@ a:hover {
   background-color: transparent;
   width: 85%;
   margin: 40px auto; }
+
+.carousel-inner {
+  box-shadow: 0 0 100px #18ffb0;
+  border-radius: 100px !important; }
 
 .card-img-top {
   box-shadow: 0 0 5px #2cf8ff; }
@@ -237,6 +261,49 @@ a:hover {
 #chi-sono {
   margin: 0 auto;
   width: 70%; }
+
+.social-container {
+  width: 65%;
+  margin: 100px auto;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.footer-divider {
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1); }
+
+.footer-btn {
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  color: #fff;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-weight: 500;
+  transition: all .2s;
+  display: flex;
+  position: relative;
+  transition: box-shadow .5s;
+  border-radius: 50px; }
+
+.footer-btn:hover {
+  box-shadow: 0 0 20px #18ffb0; }
+
+.fb {
+  border-right: none; }
+
+.social {
+  width: 40px;
+  height: 40px;
+  background: #18ffb0;
+  border-radius: 50%; }
 
 /*navbar solo con schermi >600px*/
 @media (max-width: 600px) {

@@ -37,9 +37,23 @@
   margin: 10px auto;
 
 }
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 20px; /* Rounded corners */
+    transition: box-shadow 0.3s; /* Smooth transition for box-shadow */
+}
+
+.box:hover {
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.7); /* White glow effect */
+}
+
 </style>
 </head>
 <body>
+  <div class="box">what</div>
+
   <div class="language-solidity">
   <pre>
         <code> 
