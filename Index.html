@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!--Roboto font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+  <!--Prism.js to show solidity highlights-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-solidity.min.js"></script>
+</head>
+
+<body>
+
+  <header class="sticky-top" id="home">
+
+    <!--Navbar overlay-->
+    <div class="toggle">
+      <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+      <div class="wrapper">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#chi-sono">Chi sono</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid p-2 mb-5 d-flex">
+      <img src="/assets/images/signature.png" class="alessio" alt="Responsive image">
+      <div class="container button-container">
+        <span class="mr-5">Blockchain Developer</span>
+        <div class="dropdown">
+          <button class="btn language-dropdown-button dropdown-toggle" style="width: 10px;" id="dropdownMenuButton"
+            data-toggle="dropdown">
+            <a href="#home">IT</a>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">EN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <h1>This is going to be my first actual site :D</h1>
+  <p>Yo I am kinda fried tbh </p>
+  <section>
+    <div class="home-gradient"></div>
+    <div class="home-gradient right"></div>
+  </section>
+
+  <div class="row">
+    <div class="col-md-6 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ut a eius accusamus id
+      nostrum
+      tempora tempore eveniet facilis non ipsa ad, dolore repellat, saepe atque officiis voluptas magnam quam obcaecati
+      omnis autem pariatur! Laudantium vitae odio iure consequatur enim?</div>
+    <div class="col-md-6 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis officiis optio
+      totam
+      similique assumenda eos perferendis nesciunt hic corrupti necessitatibus sunt non officia libero impedit
+      recusandae
+      vel, accusantium numquam delectus cumque alias nisi? Eaque excepturi sit magni rem officiis!</div>
+  </div>
+
+
+
+  <nav class="w-50 nav-component navbar sticky-top-nav ">
+    <a href="#home">
+      <div class="home">Home</div>
+    </a>
+    <div class="nav-divider"></div>
+    <a href="#chi-sono">
+      <div>Chi sono</div>
+    </a>
+    <div class="nav-divider"></div>
+    <a href="#portfolio">
+      <div>Portfolio</div>
+    </a>
+    <div class="nav-divider"></div>
+    <a href="#contatti">
+      <div>Contatti</div>
+    </a>
+  </nav>
+
+  <section class="my-5" id="chi-sono">Ciao, sono Alessio Zedda, una persona estremamente determinata e focalizzata sul
+    raggiungimento dei propri obiettivi. Appassionato di sport fin dall'età di 8 anni, ho praticato una vasta gamma di
+    discipline, tra cui calcio, basket e pallavolo, per poi scoprire il calisthenics, innamorandomi della filosofia che
+    si
+    cela dietro a questa disciplina. Il pianoforte è un'altra mia grande passione che coltivo da diversi anni.
+    Recentemente ho deciso di prendere seriamente in considerazione la mia salute fisica e mentale.
+    <br />
+    <br />
+    Attratto fin da giovane dal funzionamento dei computer, ho scelto di studiare presso un liceo scientifico e di
+    proseguire con gli studi universitari in ingegneria informatica. Dal 2017, ho iniziato a sperimentare con bitcoin e
+    altre criptovalute, ma solo di recente ho compreso appieno il loro vero potenziale e quello della blockchain.
+    <br />
+    <br />
+    Attualmente lavoro come cameriere/barista in un hotel svizzero mentre studio il corso di Start2Impact University per
+    diventare uno sviluppatore blockchain. Sono alla ricerca di opportunità professionali che mi permettano di crescere
+    nel campo dello sviluppo digitale legato alla blockchain, un settore che mi affascina e che ritengo pieno di
+    possibilità di crescita e innovazione. I miei obiettivi principali attuali sono completare il corso S2I per gettare
+    le basi dello sviluppatore web3 dentro di me, mantenere una buona forma fisica e raggiungere il front-lever per
+    almeno 5 secondi. Sono convinto che "se puoi sognarlo, puoi farlo".
+  </section>
+
+  <section class="my-5" id="portfolio">
+    <h2 class="text-center my-4">Progetti</h2>
+    <p class="text-center">Questo è il primo progetto portato a termine. Si tratta di un semplice ma efficace smart
+      contract scritto con
+      Solidity per un portale di raccolta fondi di beneficenza.<br />
+      Di seguito trovate la presentazione.</p>
+    <div class="carousel my-4">
+      <div class="carousel slide mt-5 mb-5" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/images/slide-1.png">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/images/slide-2.png">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/images/slide-3.png">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/images/slide-4.png">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+    <p class="text-center">Questo è il vero e proprio codice utilizzato per la raccolta fondi:</p>
+    <div class="code language-solidity">
+      <pre>
+            <code> 
+    // SPDX-License-Identifier: MIT
+
+    pragma solidity ^0.8.17;
+
+        contract Fundraiser2{
+            
+          uint public totalRaised;         // total amount raised
+          uint public goal;                // goal to reach
+          uint public totalDonations;      // total amount of donations
+          address payable public manager;  // manager's address
+          bool public closed;              // variable to check if the fundraiser is open or not
+          bool public goalmet;             // variable to check if the goal is met or not
+        
+          
+          // The manager is whoever deploys the contract
+          // goal is set on deploying the contract
+          constructor(uint _goal) {
+              manager = payable (msg.sender);
+              goal = _goal;
+              goalmet = false;
+          }
+          fallback() external payable { } 
+          receive() external payable { }
+
+          modifier onlyOwner {
+              require (msg.sender == manager, "Only the manager can do that");
+              _;
+          }
+          //function that gets donations from whichever address calls it, 
+          //updates totalRaised and toatlDonations
+          function getDonation() payable public{
+              require (goalmet == false, "Fundraiser is completed");
+              require (closed == false, "Fundraiser is closed");
+              payable (this).transfer(msg.value);
+              totalRaised = totalRaised + (msg.value);
+              totalDonations ++;
+          }
+          //function that lets only the manager withdraw the funds that have been raised
+          //NOTE: do not withdraw any funds before closing the fundraiser or any eth remaining will be lost
+          function withdrawFunds() payable public onlyOwner{
+              require(totalRaised >= goal, "Goal is not met yet");
+              payable (msg.sender).transfer(address (this).balance);
+              closed = true;
+          }
+          
+          //function that lets only the owner close the fundraiser and transfers 
+          //any remaining funds to his address
+          function closeFundraiser() payable public onlyOwner{
+              require(closed == false, "Fundraiser is already closed");
+                uint remainingFunds = address (this).balance;
+              if (remainingFunds > 0){
+                  manager.transfer(remainingFunds);
+              }
+              closed = true;
+          }
+
+          //function that checks whether the goal is reached or not
+          function checkStatus() public returns (string memory){
+              
+              if (totalRaised >= goal) {
+                  goalmet = true;
+                  return "Congratulations, fundraiser complete";
+              }
+              else {
+                  goalmet = false;
+                  return "Goal is not met yet, fundraiser is still going";
+                }
+            }
+        }
+            </code>
+          </pre>
+    </div>
+    <!--Ethereum protocols presentation-->
+    <p class="text-center mb-5">Questo progetto invece prevedeva l'esplorazione, l'interazione e lo studio dei
+      principalli
+      protocolli Ethereum </p>
+    <div class="contenitore mx-auto ethereum-container">
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth1.png" alt="Ethereum">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth2.png" alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth3.png" alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth4.png" alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth5.png" alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth6.png" alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth7.png" alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth8.png" alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth9.png" alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth10.png" alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth11.png" alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth12.png" alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth13.png" alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/images/eth14.png" alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+    </div>
+    <p class="text-center my-4">La creazione stessa di questo sito è un progetto per Start2Impact University. Dev'essere portato a
+      termine con l'utilizzo di HTML
+      e CSS. </p>
+  </section>
+
+
+
+  <section class="my-5" id="contatti">Chi sono, molto semplice: un ragazzo di 23 anni con la passione per il pc e
+    l'attività fisica.
+    Sono molto focalizzato sul raggiungimento degli obbiettivi e mi piace strutturare e registrare il percorso nel
+    raggiungerli.
+  </section>
+
+
+
+
+
+  <div class="footer">
+    <footer>
+      <a href="#footer">footer.log</a>
+    </footer>
+  </div>
+  <!--Smooth scroll-->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

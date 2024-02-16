@@ -1,0 +1,339 @@
+$primary: #fff;
+$black: black;
+$blue: #2cf8ff;
+$white: #fff;
+$green: #18ffb0;
+$off-white: #f1f3f4;
+$light: #96a7a1;
+$almost-black: #051819;
+$font1: "Roboto";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+/*/////////////////////////Navbar overlay///////////////////////////////*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
+  /*annoying darkgreen shadow*/
+  .wrapper{
+    position: fixed;
+    top: -6px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-135deg, #051819, #18ffb0);
+    clip-path: circle(10px at calc(100% - 45px) 51px);
+    transition: all 0.3s ease-in-out;
+  }
+  #active:checked ~ .wrapper{
+    clip-path: circle(75%);
+  }
+  /*Actual button*/
+  .menu-btn{
+    position: fixed;
+    z-index: 2000;
+    right: 20px;
+    /* left: 20px; */
+    top: 12px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(-135deg, #18ffb0, #051819);
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+    transition: all 0.3s ease-in-out;
+  }
+  #active:checked ~ .menu-btn{
+    background: transparent;
+    color: #18ffb0;
+  }
+  #active:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  .wrapper ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+  }
+  .wrapper ul li{
+    margin: 15px 0;
+  }
+  .wrapper ul li a{
+    color: none;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px 30px;
+    color: #fff;
+    line-height: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .wrapper ul li a:hover{
+    color: #2cf8ff;
+  }
+  
+  input[type="checkbox"]{
+      display: none;
+    }
+
+    /*/////////////////////////Navbar overlay end///////////////////////////////*/
+* {
+    
+    
+}
+
+body {
+    color: $primary;
+    font-family: $font1;
+    font-weight: 400;
+    margin-bottom: 5000px;
+    background-color: rgb(7, 20, 27);
+    
+}
+
+.alessio {
+    max-width: 100%;
+    max-height: 60px;
+    
+}
+
+.navbar {
+    min-width: 400px;
+}
+
+.dropdown-item {
+    background-color: transparent !important;
+    color: white;
+    max-width: 40px !important;
+}
+
+.dropdown-menu {
+    max-width: 40px   !important;
+    --bs-dropdown-min-width: 1rem !important;
+    --bs-dropdown-bg: transparent;
+    
+  }
+
+
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.language-dropdown-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.nav-component {
+    margin-top: 400px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 5rem;
+    align-items: center;
+    padding: 0.625rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30px;
+    z-index: 10000;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #18ffb0 !important;
+    font-weight: 300;
+}
+
+.home {
+    color: #18ffb0;
+}
+
+
+
+.nav-divider {
+    width: 1px;
+    height: 1.5rem;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.background {
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, var($green), transparent);
+}
+
+.home-gradient {
+    width: 20rem;
+    height: 20rem;
+    background-color: $blue;
+    filter: blur(200px);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    bottom: auto;
+    left: -13%;
+    right: auto;
+}
+
+.home-gradient.right {
+    opacity: .7;
+    filter: blur(150px);
+    margin-top: 10rem;
+    top: 10%;
+    bottom: auto;
+    left: auto;
+    right: 0%;
+}
+
+.mt {
+    margin-top: 500px !important;
+}
+
+
+
+
+.footer {
+    position: sticky;
+    bottom: 0;
+}
+
+.code {
+    overflow-y: auto;
+    margin-top: 72px;
+    margin-bottom: 500px;
+    overflow-x: auto;
+    height: 600px;
+    box-shadow: 0 0 10px $blue;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.code,
+.carousel {
+    flex: 1;
+    background-color: transparent;
+    width: 85%;
+    margin: 40px auto;
+}
+
+.card-img-top {
+    box-shadow: 0 0 5px $blue;
+}
+
+#row {
+    max-width: auto !important;
+    width: 100% !important;
+}
+
+.card {
+    color: $blue !important;
+    border: none;
+    background-color: transparent;
+    h5 {
+        text-align: center;
+    }
+}
+
+
+.language-solidity {
+    background-color: transparent !important;
+}
+
+.language-solidity,
+.token.selected {
+    text-shadow: none !important;
+}
+/* Sovrascrivi il colore del testo delle variabili */
+.language-solidity,
+.token.variable {
+    color: #8dc7ff !important; /* Cambia il colore delle variabili */
+}
+
+/* Sovrascrivi il colore dei segni di punteggiatura */
+.language-solidity.token.punctuation,
+.token.operator {
+    color: #ccc !important; /* Cambia il colore dei segni di punteggiatura */
+}
+
+.token.operator {
+    background: none !important;
+}
+
+
+
+.ethereum-container {
+    max-width: 65%;
+}
+
+#chi-sono {
+    margin: 0 auto;
+    width: 70%;
+}
+
+/*navbar solo con schermi >600px*/
+@media (max-width: 600px) {
+    .sticky-top-nav {
+        display: none;
+    }
+}
+
+/*navbar sticky solo con schermi >600px*/
+@media (min-width: 600px) {
+    .sticky-top-nav {
+        position: sticky;
+        top: 20;
+    }
+}
+
+
+/*header sticky-top solo da 0-600*/
+@media only screen and (max-width: 600px) {
+    .sticky-top {
+        position: sticky;
+        top: 0;
+    }
+}
+
+/*header disappeared sopra i 600px*/
+@media only screen and (min-width: 600px) {
+    .sticky-top {
+        position: relative;
+    }
+}
+
+/*Hamb. menu solo con schermi piccoli 0-600*/
+@media (min-width: 600px) {
+    .toggle{
+        display: none;
+    }
+}
