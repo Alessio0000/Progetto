@@ -367,9 +367,7 @@ a:hover {
     box-shadow: 0 0 20px $green;
 }
 
-.fb {
-    border-right: none;
-}
+
 
 .social {
     width: 40px;
@@ -377,6 +375,76 @@ a:hover {
     background: $green;
     border-radius: 50%;
 }
+
+.contattami {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 40%;
+    margin: 300px auto;
+    box-shadow: 0 0 .5rem $blue;
+    padding: 15px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+}
+
+.contact-signature {
+   display: flex;
+   justify-content: center;
+   margin: 5px auto 20px auto;
+}
+
+.message {
+    height: 100%;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.submit-btn {
+    width: 40%;
+    border-radius: 50px;
+    transition: box-shadow .3s;
+    transition: opacity .15s;
+    background-color: rgba(44, 248, 255, .9);
+
+    &:hover {
+        box-shadow: 0 0 10px $blue;
+    }
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+.form-control:focus {
+    border-color: $green;
+    box-shadow: 0 0 0.25rem $green;
+}
+
+form {
+    input,
+    textarea,
+    ::placeholder
+     {
+        background-color: transparent !important;
+        color: $off-white !important;
+    }
+    label {
+        color: $blue;
+        margin: 10px 0 5px 5px;
+    }
+}
+
+
+
+.signature {
+    display: block;
+    margin: 20px auto;
+}
+
 
 /*navbar solo con schermi >600px*/
 @media (max-width: 600px) {

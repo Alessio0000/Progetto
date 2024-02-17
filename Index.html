@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Open Graph Meta tags-->
+  <meta property="og:title" content="Alessio Zedda Web3 Personal Site" />
   <title>Homepage</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -89,34 +91,52 @@
       <div>Portfolio</div>
     </a>
     <div class="nav-divider"></div>
-    <a href="#contatti">
-      <div>Contatti</div>
+    <a href="#contattami">
+      <div>Contattami</div>
     </a>
   </nav>
 
-  <section class="my-5" id="chi-sono">Ciao, sono Alessio Zedda, una persona estremamente determinata e focalizzata sul
-    raggiungimento dei propri obiettivi. Appassionato di sport fin dall'età di 8 anni, ho praticato una vasta gamma di
-    discipline, tra cui calcio, basket e pallavolo, per poi scoprire il calisthenics, innamorandomi della filosofia che
-    si
-    cela dietro a questa disciplina. Il pianoforte è un'altra mia grande passione che coltivo da diversi anni.
-    Recentemente ho deciso di prendere seriamente in considerazione la mia salute fisica e mentale.
-    <br />
-    <br />
-    Attratto fin da giovane dal funzionamento dei computer, ho scelto di studiare presso un liceo scientifico e di
-    proseguire con gli studi universitari in ingegneria informatica. Dal 2017, ho iniziato a sperimentare con bitcoin e
-    altre criptovalute, ma solo di recente ho compreso appieno il loro vero potenziale e quello della blockchain.
-    <br />
-    <br />
-    Attualmente lavoro come cameriere/barista in un hotel svizzero mentre studio il corso di Start2Impact University per
-    diventare uno sviluppatore blockchain. Sono alla ricerca di opportunità professionali che mi permettano di crescere
-    nel campo dello sviluppo digitale legato alla blockchain, un settore che mi affascina e che ritengo pieno di
-    possibilità di crescita e innovazione. I miei obiettivi principali attuali sono completare il corso S2I per gettare
-    le basi dello sviluppatore web3 dentro di me, mantenere una buona forma fisica e raggiungere il front-lever per
-    almeno 5 secondi. Sono convinto che "se puoi sognarlo, puoi farlo".
+  <section class="my-5" id="chi-sono">
+    <img src="/assets/images/chi-sono.png" class="signature">
+    <p>
+       Ciao! Sono Alessio Zedda, un appassionato di sfide e determinazione. Fin dall'infanzia, lo sport è stato il
+      mio
+      playground di crescita. Dal calcio alla pallavolo, ho attraversato una vasta gamma di discipline, ma è stato
+      il
+      calisthenics a rubarmi il cuore con la sua filosofia di forza e libertà.<br />
+      <br />
+      Oltre alla mia passione per
+      il movimento, il pianoforte è stato il mio compagno di viaggio, offrendomi un'altra
+      forma di espressione e sfida
+      personale.<br />
+      <br />
+      La mia sete di conoscenza mi ha portato a esplorare il mondo dell'informatica, dove ho
+      scelto di coltivare la mia
+      curiosità nel liceo scientifico e successivamente nell'università, affascinato dal
+      potenziale rivoluzionario della
+      blockchain e delle criptovalute.<br />
+      <br />
+      Attualmente, mi trovo a mescolare le
+      mie passioni lavorative come cameriere/barista in un lussuoso hotel svizzero,
+      mentre mi immergo nel mondo dello
+      sviluppo blockchain attraverso il corso di Start2Impact University. Sono alla
+      costante ricerca di opportunità che
+      mi consentano di crescere in un campo che considero una fusione di tecnologia
+      e creatività, offrendo infiniti spazi
+      per l'innovazione.<br />
+      <br />
+      I miei obiettivi attuali? Completare il corso S2I per abbracciare appieno il ruolo
+      di uno sviluppatore web3,
+      mantenere un equilibrio tra mente e corpo e, perché no, dominare il front-lever per
+      almeno 5 secondi!<br />
+      <br />
+      Credo fermamente che con determinazione e visione, ogni sogno possa diventare realtà.
+      E sono pronto a dimostrarlo.
+    </p>
   </section>
 
   <section class="my-5" id="portfolio">
-    <h2 class="text-center my-4">Progetti</h2>
+    <h2 class="text-center my-4">Portfolio</h2>
     <p class="text-center">Questo è il primo progetto portato a termine. Si tratta di un semplice ma efficace smart
       contract scritto con
       Solidity per un portale di raccolta fondi di beneficenza.<br />
@@ -225,7 +245,7 @@
     <p class="text-center mb-5">Questo progetto invece prevedeva l'esplorazione, l'interazione e lo studio dei
       principalli
       protocolli Ethereum </p>
-      <div class="contact-gradient-right"></div>
+    <div class="contact-gradient-right"></div>
     <div class="contenitore mx-auto ethereum-container">
       <div class="card">
         <img class="card-img-top" src="assets/images/eth1.png" alt="Ethereum">
@@ -300,19 +320,39 @@
         </div>
       </div>
     </div>
-    <p class="text-center my-4">La creazione stessa di questo sito è un progetto per Start2Impact University. Dev'essere portato a
+    <p class="text-center my-4">La creazione stessa di questo sito è un progetto per Start2Impact University. Dev'essere
+      portato a
       termine con l'utilizzo di HTML
       e CSS. </p>
   </section>
 
 
 
-  <section class="my-5" id="contatti">   
+  <section class="contattami" id="contattami">
     <div class="contact-gradient"></div>
-
-
+    <form action method="get" autocomplete="off">
+      <legend class="contact-signature"><img src="/assets/images/contattami.png" class="alessio"></legend>
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="name" class="form-control" id="name" placeholder="John Smith">
+      </div>
+      <div class="form-group">
+        <label for="email">Indirizzo Email</label>
+        <input type="email" class="form-control" id="email" placeholder="john@outlook.com">
+      </div>
+      <div class="form-group">
+        <label for="phone-number">Numero di telefono</label>
+        <input type="tel" class="form-control" id="phone-number" placeholder="+393212345678">
+      </div>
+      <div class="form-group message">
+        <label for="message">Messaggio</label>
+        <textarea type="message" class="form-control" rows="3" id="message" placeholder="Messaggio"></textarea>
+      </div>
+      <div class="btn-container">
+        <button class="submit-btn">Invia</button>
+      </div>
+    </form>
   </section>
-
 
 
 
@@ -321,13 +361,17 @@
     <footer>
       <a href="#footer">footer.log</a>
       <div class="social-container">
-        <a class="footer-btn" href="https://www.instagram.com/zedda_alessio/" ><img src="/assets/images/instagram.svg" class="social"></a> 
+        <a class="footer-btn" href="https://www.instagram.com/zedda_alessio/"><img src="/assets/images/instagram.svg"
+            class="social"></a>
         <div class="footer-divider"></div>
-        <a class="footer-btn" href="https://github.com/Alessio0000" ><img src="/assets/images/github.svg" class="social"></a> 
+        <a class="footer-btn" href="https://github.com/Alessio0000"><img src="/assets/images/github.svg"
+            class="social"></a>
         <div class="footer-divider"></div>
-        <a class="footer-btn" href="https://www.linkedin.com/in/alessio-zedda-0bb1592b5/" ><img src="/assets/images/linkedin.svg" class="social"></a> 
+        <a class="footer-btn" href="https://www.linkedin.com/in/alessio-zedda-0bb1592b5/"><img
+            src="/assets/images/linkedin.svg" class="social"></a>
         <div class="footer-divider"></div>
-        <a class="footer-btn" href="https://www.facebook.com/alessio.zedda.14?locale=it_IT" ><img src="/assets/images/facebook.svg" class="social"></a> 
+        <a class="footer-btn" href="https://www.facebook.com/alessio.zedda.14?locale=it_IT"><img
+            src="/assets/images/facebook.svg" class="social"></a>
       </div>
     </footer>
   </div>

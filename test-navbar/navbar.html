@@ -1,93 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-solidity.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-<style>
-  .image-container {
-    position: relative;
-}
-
-.image-container img {
-    display: block;
-    width: 65%;
-    height: auto;
-    transition: transform 0.3s ease;
-   margin: 10px auto;
-
-}
-
-#zoom-toggle {
-    display: none; /* Nasconde l'elemento checkbox */
-}
-
-#zoom-toggle:checked + .image-container img {
-    transform: scale(1.75); /* Modifica il valore per aumentare o diminuire lo zoom */
-    cursor: zoom-out; /* Cambia il cursore in "zoom-out" quando l'immagine è ingrandita */
-}
-
-.image-container {
-  width: 65%;
-  margin: 10px auto;
-
-}
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-    border-radius: 20px; /* Rounded corners */
-    transition: box-shadow 0.3s; /* Smooth transition for box-shadow */
-}
-
-.box:hover {
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.7); /* White glow effect */
-}
-
-</style>
+  <title>Alessio Zedda</title>
 </head>
 <body>
-  <div class="box">what</div>
 
-  <div class="language-solidity">
-  <pre>
-        <code> 
-    // SPDX-License-Identifier: MIT
-
-    pragma solidity ^0.8.17;
-
-        contract Fundraiser2{
-            
-            uint public totalRaised;         // total amount raised
-            uint public goal;                // goal to reach
-            uint public totalDonations;      // total amount of donations
-            address payable public manager;  // manager's address
-            bool public closed;              // variable to check if the fundraiser is open or not
-            bool public goalmet;             // variable to check if the goal is met or not
-          
-            
-            
-        </code>
-      </pre>
-</div>
-<input type="checkbox" id="zoom-toggle">
-<div class="image-container">
-    <label for="zoom-toggle">
-        <img src="/assets/images/eth1.png" alt="Descrizione dell'immagine">
-    </label>
-</div>
-<footer>
-  <div class="social-icons">
-      <a href="https://www.linkedin.com/in/tuoprofilo" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/tuoprofilo" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/tuoprofilo" target="_blank"><i class="fab fa-instagram"></i></a>
+  <div class="bio-container">
+    <!-- Immagine relativa allo sport -->
+    <img src="sport.jpg" alt="Immagine sport" class="bio-image">
+    <p>Appassionato di sport fin dall'età di 8 anni, ho praticato una vasta gamma di discipline, tra cui calcio, basket e pallavolo, per poi scoprire il calisthenics, innamorandomi della filosofia che si cela dietro a questa disciplina.</p>
   </div>
-</footer>
+
+  <div class="bio-container">
+    <!-- Immagine relativa al pianoforte -->
+    <img src="pianoforte.jpg" alt="Immagine pianoforte" class="bio-image">
+    <p>Il pianoforte è un'altra mia grande passione che coltivo da diversi anni.</p>
+  </div>
+
+  <div class="bio-container">
+    <!-- Immagine relativa all'informatica -->
+    <img src="informatica.jpg" alt="Immagine informatica" class="bio-image">
+    <p>Attratto fin da giovane dal funzionamento dei computer, ho scelto di studiare presso un liceo scientifico e di proseguire con gli studi universitari in ingegneria informatica.</p>
+  </div>
+
+  <!-- Altre immagini possono essere inserite qui -->
 
 </body>
 </html>
