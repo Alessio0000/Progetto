@@ -3,29 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alessio Zedda</title>
+  <title>Sito Fosforescente</title>
+  <style>
+    body {
+      background-color: #121212; /* Sfondo scuro */
+      color: #ffffff; /* Testo bianco */
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      color: #00ff00; /* Testo verde fosforescente per titoli */
+    }
+    .green-text {
+      color: #00ff00; /* Testo verde fosforescente per elementi specifici */
+    }
+    .text-container {
+  position: relative;
+}
+
+.text-container {
+  position: relative;
+}
+
+.hover-text {
+  opacity: 0; /* Initially hide the hover text */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.text-container:hover .default-text {
+  opacity: 0; /* Hide the default text when hovering */
+}
+
+.text-container:hover .hover-text {
+  opacity: 1; /* Show the hover text when hovering */
+}
+
+
+  </style>
 </head>
 <body>
-
-  <div class="bio-container">
-    <!-- Immagine relativa allo sport -->
-    <img src="sport.jpg" alt="Immagine sport" class="bio-image">
-    <p>Appassionato di sport fin dall'età di 8 anni, ho praticato una vasta gamma di discipline, tra cui calcio, basket e pallavolo, per poi scoprire il calisthenics, innamorandomi della filosofia che si cela dietro a questa disciplina.</p>
+  <div class="container">
+    <h1 class="green-text">Benvenuto nel mio sito fosforescente!</h1>
+    <p>Qui di seguito troverai un'immagine con tonalità di verde fosforescente che si integra nel nostro tema scuro/blu fosforescente:</p>
+    <img src="immagine-verde.jpg" alt="Immagine con tonalità di verde fosforescente">
+    <p class="green-text">Continua a esplorare il nostro sito per scoprire altre sorprese!</p>
   </div>
-
-  <div class="bio-container">
-    <!-- Immagine relativa al pianoforte -->
-    <img src="pianoforte.jpg" alt="Immagine pianoforte" class="bio-image">
-    <p>Il pianoforte è un'altra mia grande passione che coltivo da diversi anni.</p>
+  <div class="text-container">
+    <span class="default-text">Blockchain Developer</span>
+    <span class="hover-text">In Progress...</span>
   </div>
-
-  <div class="bio-container">
-    <!-- Immagine relativa all'informatica -->
-    <img src="informatica.jpg" alt="Immagine informatica" class="bio-image">
-    <p>Attratto fin da giovane dal funzionamento dei computer, ho scelto di studiare presso un liceo scientifico e di proseguire con gli studi universitari in ingegneria informatica.</p>
-  </div>
-
-  <!-- Altre immagini possono essere inserite qui -->
-
+  
 </body>
 </html>

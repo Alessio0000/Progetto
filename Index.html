@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
   <meta charset="UTF-8">
@@ -39,10 +39,11 @@
         </ul>
       </div>
     </div>
-    <div class="container-fluid p-2 mb-5 d-flex">
+    <div class="container-f p-2 mb-5 d-flex">
       <img src="/assets/images/signature.png" class="alessio" alt="Responsive image">
-      <div class="container button-container">
-        <span class="mr-5">Blockchain Developer</span>
+      <div class="text-container button-container">
+        <span class="default-text">Blockchain Developer</span>
+        <span class="hover-text">In progress...</span>
         <div class="dropdown">
           <button class="btn language-dropdown-button dropdown-toggle" style="width: 10px;" id="dropdownMenuButton"
             data-toggle="dropdown">
@@ -57,25 +58,42 @@
   </header>
 
 
-  <h1>This is going to be my first actual site :D</h1>
-  <p>Yo I am kinda fried tbh </p>
+
   <section>
     <div class="home-gradient"></div>
     <div class="home-gradient right"></div>
   </section>
 
   <div class="row">
-    <div class="col-md-6 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ut a eius accusamus id
-      nostrum
-      tempora tempore eveniet facilis non ipsa ad, dolore repellat, saepe atque officiis voluptas magnam quam obcaecati
-      omnis autem pariatur! Laudantium vitae odio iure consequatur enim?</div>
-    <div class="col-md-6 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis officiis optio
-      totam
-      similique assumenda eos perferendis nesciunt hic corrupti necessitatibus sunt non officia libero impedit
-      recusandae
-      vel, accusantium numquam delectus cumque alias nisi? Eaque excepturi sit magni rem officiis!</div>
+    <div class="col-md-6 mt-5 w-40 pic-container image-container">
+      <img src="assets/images/picture.jpg" class="home-picture green-filter">
+    </div>
+    <div class="col-md-6 mt-5 w-40 bio-container">
+      <p class="bio-title">STUDENTE & PIONIERE DIGITALE</p>
+      <span class="description">
+        Appassionato di informatica, blockchain e fitness, affascinato dalla sinergia tra
+        tecnologia e finanza decentralizzata.
+      </span>
+      <p class="mission">La mia missione? Dimostrare che con determinazione e visione ogni sogno può
+        diventare realtà</p>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-6 w-40 bio-container">
+
+      <span class="bio-title">
+        CALISTHENICS:</span><br />
+      <span class="description">Trasformare il potenziale del corpo in pura potenza e libertà,
+         esplorando l'arte del movimento a corpo libero.
+      </span>
+
+    </div>
+    <div class="col-md-6 w-40 image-container pic-container">
+      <img src="assets/images/back-2.jpg" class="home-picture green-filter">
+    </div>
   </div>
 
+  <div class="bio-gradient"></div>
 
 
   <nav class="w-50 nav-component navbar sticky-top-nav ">
@@ -99,7 +117,7 @@
   <section class="my-5" id="chi-sono">
     <img src="/assets/images/chi-sono.png" class="signature">
     <p>
-       Ciao! Sono Alessio Zedda, un appassionato di sfide e determinazione. Fin dall'infanzia, lo sport è stato il
+      Ciao! Sono Alessio Zedda, un appassionato di sfide e determinazione. Fin dall'infanzia, lo sport è stato il
       mio
       playground di crescita. Dal calcio alla pallavolo, ho attraversato una vasta gamma di discipline, ma è stato
       il
@@ -135,13 +153,15 @@
     </p>
   </section>
 
+  <div class="gradient-right"></div>
+
   <section class="my-5" id="portfolio">
     <h2 class="text-center my-4">Portfolio</h2>
-    <p class="text-center">Questo è il primo progetto portato a termine. Si tratta di un semplice ma efficace smart
+    <p class="project">Il primo progetto portato a termine: si tratta di un semplice ma efficace smart
       contract scritto con
       Solidity per un portale di raccolta fondi di beneficenza.<br />
       Di seguito trovate la presentazione.</p>
-    <div class="carousel my-4">
+    <div class="carousel my-5">
       <div class="carousel slide mt-5 mb-5" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -165,7 +185,7 @@
         </a>
       </div>
     </div>
-    <p class="text-center">Questo è il vero e proprio codice utilizzato per la raccolta fondi:</p>
+    <p class="project">Questo è il vero e proprio codice utilizzato per la raccolta fondi:</p>
     <div class="code language-solidity">
       <pre>
             <code> 
@@ -242,7 +262,8 @@
           </pre>
     </div>
     <!--Ethereum protocols presentation-->
-    <p class="text-center mb-5">Questo progetto invece prevedeva l'esplorazione, l'interazione e lo studio dei
+    <h2 class="text-center mt-5">Progetto Protocolli Ethereum</h2>
+    <p class="project">Questo progetto invece prevedeva l'esplorazione, l'interazione e lo studio dei
       principalli
       protocolli Ethereum </p>
     <div class="contact-gradient-right"></div>
@@ -320,10 +341,6 @@
         </div>
       </div>
     </div>
-    <p class="text-center my-4">La creazione stessa di questo sito è un progetto per Start2Impact University. Dev'essere
-      portato a
-      termine con l'utilizzo di HTML
-      e CSS. </p>
   </section>
 
 
@@ -334,7 +351,7 @@
       <legend class="contact-signature"><img src="/assets/images/contattami.png" class="alessio"></legend>
       <div class="form-group">
         <label for="name">Nome</label>
-        <input type="name" class="form-control" id="name" placeholder="John Smith">
+        <input type="text" class="form-control" id="name" placeholder="John Smith">
       </div>
       <div class="form-group">
         <label for="email">Indirizzo Email</label>
@@ -359,7 +376,6 @@
 
   <div class="footer">
     <footer>
-      <a href="#footer">footer.log</a>
       <div class="social-container">
         <a class="footer-btn" href="https://www.instagram.com/zedda_alessio/"><img src="/assets/images/instagram.svg"
             class="social"></a>
@@ -378,8 +394,6 @@
   <!--Smooth scroll-->
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
