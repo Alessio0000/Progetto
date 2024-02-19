@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Open Graph Meta tags-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <!--Open Graph Meta tags-->
   <meta property="og:title" content="Alessio Zedda Web3 Personal Site" />
   <title>Homepage</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link href="assets/css/style.css" rel="stylesheet">
+   <link href="assets/css/style.css" rel="stylesheet">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
   <!--Roboto font-->
@@ -20,50 +22,43 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-solidity.min.js"></script>
+  <!--EmailJS script-->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "xiztikr8hwmd9UMG1",
+      });
+   })();
+</script>
+<script src="script.js"></script>
 </head>
 
-<body>
+<body class="container-page">
 
+  <div class="page-wrapper">
   <header class="sticky-top" id="home">
-
-    <!--Navbar overlay-->
-    <div class="toggle">
-      <input type="checkbox" id="active">
-      <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
-      <div class="wrapper">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#chi-sono">Chi sono</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contatti">Contatti</a></li>
-        </ul>
+    
+    <div class="container-f p-2 d-flex">
+      <div class="chi-sono-container">
+        <img src="/assets/images/signature.png" class="alessio" alt="Responsive image">
       </div>
-    </div>
-    <div class="container-f p-2 mb-5 d-flex">
-      <img src="/assets/images/signature.png" class="alessio" alt="Responsive image">
-      <div class="text-container button-container">
+      <div class="text-container">
         <span class="default-text">Blockchain Developer</span>
         <span class="hover-text">In progress...</span>
-        <div class="dropdown">
-          <button class="btn language-dropdown-button dropdown-toggle" style="width: 10px;" id="dropdownMenuButton"
-            data-toggle="dropdown">
-            <a href="#home">IT</a>
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">EN</a>
-          </div>
-        </div>
+      </div>
+      <div class="language-selection">
+        <button class="language">IT</button>
+        <button class="language">EN</button>
       </div>
     </div>
   </header>
-
-
-
   <section>
     <div class="home-gradient"></div>
     <div class="home-gradient right"></div>
   </section>
-
   <div class="row">
     <div class="col-md-6 mt-5 w-40 pic-container image-container">
       <img src="assets/images/picture.jpg" class="home-picture green-filter">
@@ -89,13 +84,10 @@
 
     </div>
     <div class="col-md-6 w-40 image-container pic-container">
-      <img src="assets/images/back-2.jpg" class="home-picture green-filter">
+      <img src="assets/images/back-2.jpg" class="home-picture green-filter marginb">
     </div>
   </div>
-
   <div class="bio-gradient"></div>
-
-
   <nav class="w-50 nav-component navbar sticky-top-nav ">
     <a href="#home">
       <div class="home">Home</div>
@@ -113,9 +105,10 @@
       <div>Contattami</div>
     </a>
   </nav>
-
   <section class="my-5" id="chi-sono">
-    <img src="/assets/images/chi-sono.png" class="signature">
+    <div class="chi-sono-container">
+      <img src="/assets/images/chi-sono.png" class="signature">
+    </div>
     <p>
       Ciao! Sono Alessio Zedda, un appassionato di sfide e determinazione. Fin dall'infanzia, lo sport è stato il
       mio
@@ -152,9 +145,12 @@
       E sono pronto a dimostrarlo.
     </p>
   </section>
-
   <div class="gradient-right"></div>
-
+  <div class="cv-container">
+    <button class="cv-btn">
+      <a href="/assets/cv/index.html">CV personale</a>
+    </button>
+  </div>
   <section class="my-5" id="portfolio">
     <h2 class="text-center my-4">Portfolio</h2>
     <p class="project">Il primo progetto portato a termine: si tratta di un semplice ma efficace smart
@@ -263,7 +259,7 @@
     </div>
     <!--Ethereum protocols presentation-->
     <h2 class="text-center mt-5">Progetto Protocolli Ethereum</h2>
-    <p class="project">Questo progetto invece prevedeva l'esplorazione, l'interazione e lo studio dei
+    <p class="project">Questo progetto invece prevede l'esplorazione, l'interazione e lo studio dei
       principalli
       protocolli Ethereum </p>
     <div class="contact-gradient-right"></div>
@@ -342,38 +338,31 @@
       </div>
     </div>
   </section>
-
-
-
   <section class="contattami" id="contattami">
     <div class="contact-gradient"></div>
-    <form action method="get" autocomplete="off">
+    <form id="contact-form" onsubmit="return sendMail()">
       <legend class="contact-signature"><img src="/assets/images/contattami.png" class="alessio"></legend>
       <div class="form-group">
         <label for="name">Nome</label>
-        <input type="text" class="form-control" id="name" placeholder="John Smith">
+        <input type="text" class="form-control" id="name" placeholder="John Smith" required>
       </div>
       <div class="form-group">
         <label for="email">Indirizzo Email</label>
-        <input type="email" class="form-control" id="email" placeholder="john@outlook.com">
+        <input type="email" class="form-control" id="email" placeholder="john@outlook.com" required>
       </div>
       <div class="form-group">
         <label for="phone-number">Numero di telefono</label>
-        <input type="tel" class="form-control" id="phone-number" placeholder="+393212345678">
+        <input type="tel" class="form-control" id="phonenumber" placeholder="+393212345678">
       </div>
       <div class="form-group message">
         <label for="message">Messaggio</label>
-        <textarea type="message" class="form-control" rows="3" id="message" placeholder="Messaggio"></textarea>
+        <textarea type="message" class="form-control" rows="3" id="message" placeholder="Messaggio" required></textarea>
       </div>
       <div class="btn-container">
-        <button class="submit-btn">Invia</button>
+        <button type="submit" value="Send" class="submit-btn"></button>
       </div>
     </form>
   </section>
-
-
-
-
   <div class="footer">
     <footer>
       <div class="social-container">
@@ -391,9 +380,9 @@
       </div>
     </footer>
   </div>
+</div>
   <!--Smooth scroll-->
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>

@@ -1,63 +1,41 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sito Fosforescente</title>
-  <style>
-    body {
-      background-color: #121212; /* Sfondo scuro */
-      color: #ffffff; /* Testo bianco */
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    h1, h2, h3 {
-      color: #00ff00; /* Testo verde fosforescente per titoli */
-    }
-    .green-text {
-      color: #00ff00; /* Testo verde fosforescente per elementi specifici */
-    }
-    .text-container {
-  position: relative;
-}
-
-.text-container {
-  position: relative;
-}
-
-.hover-text {
-  opacity: 0; /* Initially hide the hover text */
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 0.3s ease; /* Smooth transition for opacity */
-}
-
-.text-container:hover .default-text {
-  opacity: 0; /* Hide the default text when hovering */
-}
-
-.text-container:hover .hover-text {
-  opacity: 1; /* Show the hover text when hovering */
-}
-
-
-  </style>
+    <title>Contact Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "YOUR_PUBLIC_KEY",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
-  <div class="container">
-    <h1 class="green-text">Benvenuto nel mio sito fosforescente!</h1>
-    <p>Qui di seguito troverai un'immagine con tonalità di verde fosforescente che si integra nel nostro tema scuro/blu fosforescente:</p>
-    <img src="immagine-verde.jpg" alt="Immagine con tonalità di verde fosforescente">
-    <p class="green-text">Continua a esplorare il nostro sito per scoprire altre sorprese!</p>
-  </div>
-  <div class="text-container">
-    <span class="default-text">Blockchain Developer</span>
-    <span class="hover-text">In Progress...</span>
-  </div>
-  
+    <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
 </body>
 </html>

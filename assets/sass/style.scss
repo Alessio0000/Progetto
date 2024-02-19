@@ -9,89 +9,10 @@ $almost-black: #051819;
 $font1: "Roboto";
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-
-/*/////////////////////////Navbar overlay///////////////////////////////*/
-*{
+.container-page {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
-  /*annoying darkgreen shadow*/
-  .wrapper{
-    position: fixed;
-    top: -6px;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(-135deg, #051819, #18ffb0);
-    clip-path: circle(10px at calc(100% - 45px) 51px);
-    transition: all 0.3s ease-in-out;
-  }
-  #active:checked ~ .wrapper{
-    clip-path: circle(75%);
-  }
-  /*Actual button*/
-  .menu-btn{
-    position: fixed;
-    z-index: 2000;
-    right: 20px;
-    /* left: 20px; */
-    top: 12px;
-    height: 45px;
-    width: 45px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #fff;
-    cursor: pointer;
-    background: linear-gradient(-135deg, #18ffb0, #051819);
-    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-    transition: all 0.3s ease-in-out;
-  }
-  #active:checked ~ .menu-btn{
-    background: transparent;
-    color: #18ffb0;
-  }
-  #active:checked ~ .menu-btn i:before{
-    content: "\f00d";
-  }
-  .wrapper ul{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: center;
-  }
-  .wrapper ul li{
-    margin: 15px 0;
-  }
-  .wrapper ul li a{
-    color: none;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 5px 30px;
-    color: #fff;
-    line-height: 50px;
-    transition: all 0.3s ease;
-  }
-  
-  
-  .wrapper ul li a:hover{
-    color: #2cf8ff;
-  }
-  
-  input[type="checkbox"]{
-      display: none;
-    }
-
-    /*/////////////////////////Navbar overlay end///////////////////////////////*/
-* {
-    
-    
 }
 
 body {
@@ -99,23 +20,71 @@ body {
     font-family: $font1;
     font-weight: 400;
     background-color: rgb(7, 20, 27);
-    overflow-x: hidden;
 }
 
+.row {
+    --bs-gutter-x: 0 !important; /* Set horizontal gutter to 0 */
+  }
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    
+}
+
+
+
 .container-f {
+    display: flex;
     justify-content: space-between;
+    margin: 0 2rem;
 }
 
 .alessio {
-    max-width: 100%;
+    max-width: 250px;
     max-height: 60px;
-    margin-left: 50px;
 }
 
 .text-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+}
+@media (max-width: 600px){
+    .container-f {
+        justify-content: space-between;
+        margin: 0 auto;
+        background-color: transparent; /* Semi-transparent background */
+        backdrop-filter: blur(5px); /* Apply a 5px blur effect to the backdrop */  
+     }
+     .text-container {
+        display: none;
+     }
+}
+
+.cv-container {
+    display: flex;
+    justify-content: center;
+}
+.cv-btn {
+    border-radius: 50px;
+    height: 60px;
+    width: 30%;
+    min-width: 200px;
+    background-image: linear-gradient(100deg,rgba(2,176,155,.4),rgba(90,137,253,.18));
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,.12);
+    transition: all .5s;
+    
+}
+
+.cv-btn:hover {
+    box-shadow: 0 0px 40px rgba(45,181,134,.4);
+    background-image: linear-gradient(100deg,rgba(2,176,155,.38),rgba(2,176,155,.2));
+    background-color: rgba(5, 176, 155, .6);
+    
 }
 
 .hover-text {
@@ -124,6 +93,7 @@ body {
     background: linear-gradient(to right,$blue , $green); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
+    
 }
   
   .text-container:hover .default-text {
@@ -144,6 +114,7 @@ body {
     align-items: center;
 }
 
+
 .bio-gradient {
     width: 20rem;
     height: 20rem;
@@ -151,10 +122,8 @@ body {
     filter: blur(200px);
     border-radius: 50%;
     display: block;
-    position: relative;
-    bottom: auto;
+    position: absolute;
     left: -10%;
-    right: auto;
 }
 
 .navbar {
@@ -293,15 +262,14 @@ a:hover {
     font-weight: 500;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
     .bio-container {
-    max-width: 500px;
+    width: 500px;
     padding: 0 1.25rem;
 }
 }
 
 .bio-container {
-    width: 500px;
 }
 
 .pic-container {
@@ -312,7 +280,7 @@ a:hover {
 .home-picture {
     min-width: 200px;
     min-height: 200px;
-    max-width: 500px;
+    max-width: 300px;
     max-height: 500px;
     border-radius: 30%;
     box-shadow: 0 0 30px $green;
@@ -323,6 +291,11 @@ a:hover {
 
 
 }
+
+.marginb {
+    margin-bottom: 40px;
+}
+
 
 .green-filter {
     filter: grayscale(100%);    
@@ -335,8 +308,8 @@ a:hover {
     background-color: $green;
     filter: blur(200px);
     border-radius: 50%;
-    position: relative;
-    right: -80%;
+    position: absolute;
+    right: 0;
     z-index: -1;
 }
 
@@ -399,6 +372,24 @@ a:hover {
     }
 }
 
+.chi-sono-container,
+.contact-signature {
+    
+        width: 100%; /* Set the width of the container */
+        height: auto; /* Let the height adjust automatically based on the aspect ratio */
+        overflow: hidden; /* Ensure the image doesn't overflow its container */
+        display: flex;
+        justify-content: center;
+}
+
+.chi-sono-container,
+.contact-signature img {
+    width: 100%; /* Make the image fill the container horizontally */
+    height: auto; /* Let the height adjust automatically based on the aspect ratio */
+/*     display: block; /* Ensure the image behaves as a block element */
+ 
+}
+
 
 .language-solidity {
     background-color: transparent !important;
@@ -447,11 +438,7 @@ a:hover {
 .footer {
 }
 
-.footer-divider {
-    width: 1px;
-    height: 100%;
-    background-color: rgba(255, 255, 255, .1);
-}
+
 
 .footer-btn {
     grid-column-gap: 0.5rem;
@@ -473,7 +460,10 @@ a:hover {
 }
 
 .footer-btn:hover {
-    box-shadow: 0 0 20px $green;
+    box-shadow: 0 0 20px rgba($green, 0.4), 0 0 30px $blue ;
+    .social {
+        background: rgba($blue, 0.5)
+    }
 }
 
 
@@ -483,6 +473,7 @@ a:hover {
     height: 40px;
     background: $green;
     border-radius: 50%;
+    transition: background 0.5s;
 }
 
 .contattami {
@@ -540,7 +531,7 @@ form {
     ::placeholder
      {
         background-color: transparent !important;
-        color: $off-white !important;
+        color: #bdbdbd !important;
     }
     label {
         color: $blue;
@@ -550,10 +541,6 @@ form {
 
 
 
-.signature {
-    display: block;
-    margin: 20px auto;
-}
 
 
 /*navbar solo con schermi >600px*/
@@ -591,5 +578,23 @@ form {
 @media (min-width: 600px) {
     .toggle{
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .home-gradient,
+    .gradient-right,
+    .bio-gradient,
+    .contact-gradient,
+    .contact-gradient-right,
+    .gradient {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .page-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
     }
 }

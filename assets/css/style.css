@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-/*/////////////////////////Navbar overlay///////////////////////////////*/
+.container-page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 400;
+  background-color: #07141b; }
+
+.row {
+  --bs-gutter-x: 0 !important;
+  /* Set horizontal gutter to 0 */ }
+
 * {
   margin: 0;
   padding: 0;
@@ -7,92 +21,48 @@
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased; }
 
-/*annoying darkgreen shadow*/
-.wrapper {
-  position: fixed;
-  top: -6px;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(-135deg, #051819, #18ffb0);
-  clip-path: circle(10px at calc(100% - 45px) 51px);
-  transition: all 0.3s ease-in-out; }
-
-#active:checked ~ .wrapper {
-  clip-path: circle(75%); }
-
-/*Actual button*/
-.menu-btn {
-  position: fixed;
-  z-index: 2000;
-  right: 20px;
-  /* left: 20px; */
-  top: 12px;
-  height: 45px;
-  width: 45px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-  background: linear-gradient(-135deg, #18ffb0, #051819);
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-  transition: all 0.3s ease-in-out; }
-
-#active:checked ~ .menu-btn {
-  background: transparent;
-  color: #18ffb0; }
-
-#active:checked ~ .menu-btn i:before {
-  content: "\f00d"; }
-
-.wrapper ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center; }
-
-.wrapper ul li {
-  margin: 15px 0; }
-
-.wrapper ul li a {
-  color: none;
-  text-decoration: none;
-  font-size: 30px;
-  padding: 5px 30px;
-  color: #fff;
-  line-height: 50px;
-  transition: all 0.3s ease; }
-
-.wrapper ul li a:hover {
-  color: #2cf8ff; }
-
-input[type="checkbox"] {
-  display: none; }
-
-/*/////////////////////////Navbar overlay end///////////////////////////////*/
-body {
-  color: #fff;
-  font-family: "Roboto";
-  font-weight: 400;
-  background-color: #07141b;
-  overflow-x: hidden; }
-
 .container-f {
-  justify-content: space-between; }
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem; }
 
 .alessio {
-  max-width: 100%;
-  max-height: 60px;
-  margin-left: 50px; }
+  max-width: 250px;
+  max-height: 60px; }
 
 .text-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px; }
+  flex-wrap: wrap; }
+
+@media (max-width: 600px) {
+  .container-f {
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: transparent;
+    /* Semi-transparent background */
+    backdrop-filter: blur(5px);
+    /* Apply a 5px blur effect to the backdrop */ }
+
+  .text-container {
+    display: none; } }
+.cv-container {
+  display: flex;
+  justify-content: center; }
+
+.cv-btn {
+  border-radius: 50px;
+  height: 60px;
+  width: 30%;
+  min-width: 200px;
+  background-image: linear-gradient(100deg, rgba(2, 176, 155, 0.4), rgba(90, 137, 253, 0.18));
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all .5s; }
+
+.cv-btn:hover {
+  box-shadow: 0 0px 40px rgba(45, 181, 134, 0.4);
+  background-image: linear-gradient(100deg, rgba(2, 176, 155, 0.38), rgba(2, 176, 155, 0.2));
+  background-color: rgba(5, 176, 155, 0.6); }
 
 .hover-text {
   display: none;
@@ -122,10 +92,8 @@ body {
   filter: blur(200px);
   border-radius: 50%;
   display: block;
-  position: relative;
-  bottom: auto;
-  left: -10%;
-  right: auto; }
+  position: absolute;
+  left: -10%; }
 
 .navbar {
   min-width: 400px; }
@@ -242,13 +210,10 @@ a:hover {
   font-size: 2rem;
   font-weight: 500; }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
   .bio-container {
-    max-width: 500px;
+    width: 500px;
     padding: 0 1.25rem; } }
-.bio-container {
-  width: 500px; }
-
 .pic-container {
   display: flex;
   justify-content: center; }
@@ -256,7 +221,7 @@ a:hover {
 .home-picture {
   min-width: 200px;
   min-height: 200px;
-  max-width: 500px;
+  max-width: 300px;
   max-height: 500px;
   border-radius: 30%;
   box-shadow: 0 0 30px #18ffb0;
@@ -264,6 +229,9 @@ a:hover {
   margin-top: 20px;
   object-fit: cover;
   margin: 20px 20px; }
+
+.marginb {
+  margin-bottom: 40px; }
 
 .green-filter {
   filter: grayscale(100%); }
@@ -274,8 +242,8 @@ a:hover {
   background-color: #18ffb0;
   filter: blur(200px);
   border-radius: 50%;
-  position: relative;
-  right: -80%;
+  position: absolute;
+  right: 0;
   z-index: -1; }
 
 #portfolio h2 {
@@ -325,6 +293,25 @@ a:hover {
   .card h5 {
     text-align: center; }
 
+.chi-sono-container,
+.contact-signature {
+  width: 100%;
+  /* Set the width of the container */
+  height: auto;
+  /* Let the height adjust automatically based on the aspect ratio */
+  overflow: hidden;
+  /* Ensure the image doesn't overflow its container */
+  display: flex;
+  justify-content: center; }
+
+.chi-sono-container,
+.contact-signature img {
+  width: 100%;
+  /* Make the image fill the container horizontally */
+  height: auto;
+  /* Let the height adjust automatically based on the aspect ratio */
+  /*     display: block; /* Ensure the image behaves as a block element */ }
+
 .language-solidity {
   background-color: transparent !important; }
 
@@ -362,11 +349,6 @@ a:hover {
   align-items: center;
   justify-content: space-around; }
 
-.footer-divider {
-  width: 1px;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1); }
-
 .footer-btn {
   grid-column-gap: 0.5rem;
   grid-row-gap: 0.5rem;
@@ -386,13 +368,16 @@ a:hover {
   border-radius: 50px; }
 
 .footer-btn:hover {
-  box-shadow: 0 0 20px #18ffb0; }
+  box-shadow: 0 0 20px rgba(24, 255, 176, 0.4), 0 0 30px #2cf8ff; }
+  .footer-btn:hover .social {
+    background: rgba(44, 248, 255, 0.5); }
 
 .social {
   width: 40px;
   height: 40px;
   background: #18ffb0;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: background 0.5s; }
 
 .contattami {
   display: flex;
@@ -438,14 +423,10 @@ form input,
 form textarea,
 form ::placeholder {
   background-color: transparent !important;
-  color: #f1f3f4 !important; }
+  color: #bdbdbd !important; }
 form label {
   color: #2cf8ff;
   margin: 10px 0 5px 5px; }
-
-.signature {
-  display: block;
-  margin: 20px auto; }
 
 /*navbar solo con schermi >600px*/
 @media (max-width: 600px) {
@@ -469,5 +450,17 @@ form label {
 @media (min-width: 600px) {
   .toggle {
     display: none; } }
+@media (max-width: 500px) {
+  .home-gradient,
+  .gradient-right,
+  .bio-gradient,
+  .contact-gradient,
+  .contact-gradient-right,
+  .gradient {
+    display: none; } }
+@media (min-width: 1400px) {
+  .page-wrapper {
+    max-width: 1400px;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */
