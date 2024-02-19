@@ -1,56 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    
-  </head>
-  <body>
-    <div class="container border mt-3 bg-light">
-      <div class="row">
-        <div class="col-md-6 p-5 bg-primary text-white">
-          <h1>Hi there!</h1>
-          <h4>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
-          </h4>
-        </div>
-        <div class="col-md-6 border-left py-3">
-          <h1>Contact form</h1>
-          <div class="form-group">
-            <h5 for="name">Name</h5>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              placeholder="Enter name"
-            />
-          </div>
-          <div class="form-group">
-            <h5 for="email">Email</h5>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="Enter email"
-            />
-          </div>
-          <div class="form-group">
-            <h5 for="message">Message</h5>
-            <textarea class="form-control" id="message" rows="3"></textarea>
-          </div>
-          <button class="btn btn-primary" onclick="sendMail()">Submit</button>
-        </div>
-      </div>
+<header>
+  <nav class="navbar">
+    <div class="signature">
+      <img src="/assets/images/signature.png">
     </div>
-  </body>
+    <ul class="nav-ul">
+      <li><a href="/Index.html">Home</a></li>
+      <li><a href="/index.html/#About">About</a></li>
+      <li><a href="/index.html/#Portfolio">Portfolio</a></li>
+      <li><a href="/index.html/#Contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section>
+  <div class="grid-container">
+
+  <div class="hard-skills item">
+    <h2>Hard-Skills</h2>
+    <ul class="h-skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Visual Studio Code</li>
+      <li>Git</li>
+      <li>Git-hub</li>
+      <li>Solidity</li>
+      <li>Others:
+        Canva, Office
+      </li>
+    </ul>
+  </div>
+  <div class="soft-skills item">
+    <h2>Soft-Skills</h2>
+    <ul class="s-skills">
+      <li>Problem-solving</li>
+      <li>Precision</li>
+      <li>Goal-oriented</li>
+      <li>Interpersonal skills</li>
+      <li>Reliability and stress resilience</li>
+      <li>Adaptability</li>
+    </ul>
+  </div>
+  <div class="languages item">
+    <h2>Languages</h2>
+    <ul>
+      <li>Italian: Native</li>
+      <li>English: B2</li>
+      <a href="https://openbadges.bestr.it/public/assertions/IA3-zu4yQIS5XacMbw9F4w">
+      <img src="/assets/images/b2-badge.png" class="badge" alt="b2 badge certificate">
+      </a>
+    </ul>
+  </div>
+  <div class="education item">
+    <h2>Education</h2>
+    <ul>
+      <li>Secondary school diploma, Technical/Applied Sciences <br/><span>
+        2014-2019</span></li>
+      <li>University of Cagliari Computer Engineering <br/><span>
+        2019-2021</span></li>
+        <li>Master Start2Impact University Blockchain Developer<br/><span>
+          Ongoing
+        </span></li>
+    </ul>
+  </div>
+  <div class="work-experience item">
+    <h2>Work-Experience</h2>
+    <ul>
+      <li>Waiter at Grotto Laura <br/>(<span>
+        Switzerland 2022 </span> )</li>
+      <li>Waiter at Forchetta Allegra restaurant<br/>(<span>
+        Switzerland 2022 </span> )</li>
+      <li>Waiter/Delivery at Grotto Stevenoni<br/> (<span>
+        Switzerland 2023 </span> )</li>
+      <li>Assistant Manager at Grotto Stevenoni <br/>(<span>
+        Switzerland 2023 </span> )</li>
+      <li>Waiter at 4 &#9733; Hotel La Tureta <br/>(<span>
+        Switzerland Ongoing </span> )</li>
+    </ul>
+  </div>
+  <div class="hobbies item">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Calisthenics</li>
+      <li>Playing piano</li>
+      <li>Travel</li>
+      <li>Blockchain</li>
+      <li>Gaming</li>
+    </ul>
+  </div>
+
+</div>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="social-container">
+      <a class="footer-btn" href="https://www.instagram.com/zedda_alessio/"><img src="/assets/images/instagram.svg"
+          class="social"></a>
+      <div class="footer-divider"></div>
+      <a class="footer-btn" href="https://github.com/Alessio0000"><img src="/assets/images/github.svg"
+          class="social"></a>
+      <div class="footer-divider"></div>
+      <a class="footer-btn" href="https://www.linkedin.com/in/alessio-zedda-0bb1592b5/"><img
+          src="/assets/images/linkedin.svg" class="social"></a>
+      <div class="footer-divider"></div>
+      <a class="footer-btn" href="https://www.facebook.com/alessio.zedda.14?locale=it_IT"><img
+          src="/assets/images/facebook.svg" class="social"></a>
+    </div>
+  </div>
+</footer>
+</main>
+</body>
 </html>

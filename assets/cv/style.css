@@ -1,0 +1,150 @@
+:root {
+  --blue: #2cf8ff;
+  --green: #18ffb0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #07141b;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px; /* Gap between grid items */
+  grid-auto-rows: auto; /*Adjust the height (rows) based on content*/
+  margin: 40px;
+}
+
+.item {
+  border: 1px solid gray;
+  color: rgb(196, 196, 196);
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+
+h2 {
+  background: linear-gradient(to right, #2cf8ff, #18ffb0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-wrap: nowrap;
+    padding: 5px;
+    text-align: center;
+}
+
+.badge {
+  height: 100px;
+  width: 100px;
+}
+
+ul {
+  margin: 0 1.5rem;
+  font-size: 18px;
+}
+
+li {
+  line-height: 1.7rem;
+
+}
+
+span {
+  color: rgb(109, 109, 109);
+}
+
+.nav-ul {
+  display: flex;
+  color:#2cf8ff;
+  justify-content: space-around;
+  list-style-type: none;
+  gap: 5rem;
+  border: 1px solid grey;
+  height: 60px;
+  border-radius: 22px;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.nav-ul a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container {
+  margin-top: 5vw;
+}
+
+.social-container {
+  width: 65%;
+  margin: 100px auto;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-btn:hover {
+  box-shadow: 0 0 20px rgba(24, 255, 176, 0.4), 0 0 40px rgb(44, 248, 255);
+    
+}
+
+.footer-btn:hover .social {
+    background: var(--blue);
+}
+
+.footer-btn {
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  border-right: 1px solid rgba(255,255,255,.2);
+  border-left: 1px solid rgba(255,255,255,.2);
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding: 1.3rem 0;
+  transition: all .2s;
+  transition: box-shadow .5s;
+  display: flex;
+  position: relative;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+
+
+.social {
+  width: 40px;
+  height: 40px;
+  background: var(--green);
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+main {
+  flex-grow: 1;
+}
+
+@media (max-width: 855px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 455px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
