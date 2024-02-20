@@ -8,7 +8,8 @@ body {
   color: #fff;
   font-family: "Roboto";
   font-weight: 400;
-  background-color: #07141b; }
+  background-color: #07141b;
+  cursor: default; }
 
 .row {
   --bs-gutter-x: 0 !important;
@@ -104,8 +105,7 @@ body {
   font-size: 30px;
   background: linear-gradient(to right, #2cf8ff, #18ffb0);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: none; }
+  -webkit-text-fill-color: transparent; }
 
 .default-text {
   text-decoration: underline; }

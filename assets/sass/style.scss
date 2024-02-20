@@ -20,6 +20,7 @@ body {
     font-family: $font1;
     font-weight: 400;
     background-color: rgb(7, 20, 27);
+    cursor: default;
 }
 
 .row {
@@ -132,7 +133,6 @@ body {
     background: linear-gradient(to right,$blue , $green); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    cursor: none;
   }
 
 .default-text {
