@@ -55,7 +55,10 @@ body {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.12);
   transition: all .3s;
-  color: white;
+  color: white; }
+
+.cv-container {
+  width: 220px;
   display: block;
   margin: 0 auto; }
 
@@ -67,6 +70,9 @@ body {
 .cv-btn:active {
   height: 55px;
   min-width: 210px; }
+
+.smaller {
+  font-size: 21px; }
 
 .text-container {
   position: relative;
