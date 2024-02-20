@@ -69,13 +69,8 @@ body {
      }
 }
 
-.cv-container {
-    display: flex;
-    justify-content: center;
-}
+
 .cv-btn {
-    width: 100%; 
-    height: 100%;
     border-radius: 50px;
     height: 60px;
     min-width: 220px;
@@ -84,6 +79,8 @@ body {
     border: 1px solid rgba(255,255,255,.12);
     transition: all .3s;
     color: white;
+    display: block;
+    margin: 0 auto;
 }
 
 .cv-btn:hover {
@@ -97,22 +94,9 @@ body {
     min-width: 210px;
 }
 
-/* .hover-text {
-    display: none;
-    font-size: 30px;
-    background: linear-gradient(to right,$blue , $green); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-    
-}
+
   
-  .text-container:hover .default-text {
-    display: none;
-  }
   
-  .text-container:hover .hover-text {
-    display: inline-block;
-  } */
 
   .text-container {
     position: relative;
@@ -123,35 +107,16 @@ body {
     -webkit-text-fill-color: transparent;
   }
   
-  .hover-text {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.4s ease-in-out;
-    font-size: 30px;
-    background: linear-gradient(to right,$blue , $green); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
+  
 .default-text {
     text-decoration: underline;
+    margin-right: 5vw;
 }
 
-  .default-text,
-  .hover-text {
+  .default-text {
     white-space: nowrap;
   }
   
-  .text-container:hover .hover-text {
-    opacity: 1;
-  }
-  
-  .text-container:hover .default-text {
-    opacity: 0;
-  }
-
   .language-selection {
     display: inline-block;
     margin-left: 2rem;
