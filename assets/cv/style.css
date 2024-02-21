@@ -14,6 +14,7 @@ body {
   background-color: #07141b;
   display: flex;
   flex-direction: column;
+  cursor: default;
 }
 
 .grid-container {
@@ -209,6 +210,7 @@ main {
   .hidden {
     display: flex !important; 
     margin: auto 0;
+    width: 60px;
   }
   .show {
     display: none !important;
@@ -264,9 +266,15 @@ a {
   transition: all .4s;
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     .item {
       width: 70vw;
     }
 
-   }  
+   } */  
+   @media (max-width: 400px) {
+    .grid-container {
+      margin: 85px 10px 0 10px;
+    }
+   }
+
