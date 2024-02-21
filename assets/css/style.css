@@ -43,10 +43,7 @@ body {
     background-color: transparent;
     /* Semi-transparent background */
     backdrop-filter: blur(5px);
-    /* Apply a 5px blur effect to the backdrop */ }
-
-  .text-container {
-    display: none; } }
+    /* Apply a 5px blur effect to the backdrop */ } }
 .cv-btn {
   border-radius: 50px;
   height: 60px;
@@ -476,18 +473,6 @@ form label {
 @media (min-width: 600px) {
   .toggle {
     display: none; } }
-@media (max-width: 500px) {
-  .home-gradient,
-  .gradient-right,
-  .bio-gradient,
-  .contact-gradient,
-  .contact-gradient-right,
-  .gradient {
-    display: none; }
-
-  .contattami {
-    max-width: 90%;
-    min-width: 250px; } }
 @media (min-width: 1400px) {
   .page-wrapper {
     max-width: 1400px;
@@ -527,5 +512,58 @@ form label {
 @keyframes textclip {
   to {
     background-position: -200% center; } }
+/* @media (max-width: 500px) {
+    .home-gradient,
+    .gradient-right,
+    .bio-gradient,
+    .contact-gradient,
+    .contact-gradient-right,
+    .gradient {
+        display: none;
+    } 
+
+    .contattami {
+        max-width: 90%;
+        min-width: 250px;
+    }
+}*/
+@media (max-width: 550px) {
+  .row {
+    display: flex;
+    flex-direction: column; }
+
+  #chi-sono {
+    margin: 0 auto;
+    width: 90%;
+    text-align: justify; }
+
+  .project {
+    width: 80%; }
+
+  .ethereum-container {
+    max-width: 85%; }
+
+  .contattami {
+    max-width: 85%; }
+
+  .large-screen-only {
+    display: none; }
+
+  .small-screen-only {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 10px; }
+
+  .lang {
+    display: flex;
+    justify-content: flex-end; } }
+@media (min-width: 551px) {
+  .small-screen-only {
+    display: none; } }
+@media (max-width: 430px) {
+  .default-text {
+    display: none; } }
+.mobile-icon {
+  width: 50px; }
 
 /*# sourceMappingURL=style.css.map */

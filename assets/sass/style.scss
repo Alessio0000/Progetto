@@ -63,10 +63,7 @@ body {
         margin: 0 auto;
         background-color: transparent; /* Semi-transparent background */
         backdrop-filter: blur(5px); /* Apply a 5px blur effect to the backdrop */  
-     }
-     .text-container {
-        display: none;
-     }
+    }
 }
 
 
@@ -617,21 +614,7 @@ form {
     }
 }
 
-@media (max-width: 500px) {
-    .home-gradient,
-    .gradient-right,
-    .bio-gradient,
-    .contact-gradient,
-    .contact-gradient-right,
-    .gradient {
-        display: none;
-    }
 
-    .contattami {
-        max-width: 90%;
-        min-width: 250px;
-    }
-}
 
 @media (min-width: 1400px) {
     .page-wrapper {
@@ -672,24 +655,96 @@ form {
     animation-delay: 0.5s;
 }
 
-.default-text
-{
-  background-image: linear-gradient(
-    -225deg,
-    #2cf8ff 0%,
-    #18ffb0 100%
-  );
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 3s linear infinite;
-  display: inline-block;
-  font-size: 28px;
+    .default-text {
+    background-image: linear-gradient(
+        -225deg,
+        #2cf8ff 0%,
+        #18ffb0 100%
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    font-size: 28px;
+    
 }
 
 @keyframes textclip {
   to {
     background-position: -200% center;
   }
+}
+
+
+/* @media (max-width: 500px) {
+    .home-gradient,
+    .gradient-right,
+    .bio-gradient,
+    .contact-gradient,
+    .contact-gradient-right,
+    .gradient {
+        display: none;
+    } 
+
+    .contattami {
+        max-width: 90%;
+        min-width: 250px;
+    }
+}*/
+
+
+@media (max-width: 550px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #chi-sono {
+        margin: 0 auto;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .project {
+        width: 80%;
+    }
+
+    .ethereum-container {
+        max-width: 85%;
+    }
+
+    .contattami {
+        max-width: 85%;
+    }
+    .large-screen-only {
+        display: none;
+    }
+    .small-screen-only {
+        display: inline-block;
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+    .lang {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 551px) {
+    .small-screen-only {
+    display: none;
+}
+}
+
+@media (max-width: 430px) {
+    .default-text {
+        display: none;
+    }
+        
+}
+
+.mobile-icon {
+    width: 50px;
 }
