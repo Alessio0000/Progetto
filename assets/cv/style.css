@@ -152,7 +152,7 @@ main {
 
 .item {
   opacity: 0; 
-  font-size: 24px;
+  font-size: 20px;
   animation: fadeIn 1s forwards; 
 }
 
@@ -258,9 +258,15 @@ a {
 .item:hover {
   box-shadow: 0 0 40px var(--green);
   border-radius: 40px;
-  font-size: 30px;
 }
 
 .item {
   transition: all .4s;
 }
+
+@media (max-width: 400px) {
+    .item {
+      width: 70vw;
+    }
+
+   }  
