@@ -111,6 +111,10 @@ body {
     -webkit-text-fill-color: transparent;
   } */
 
+  .text-container {
+    display: inline-block;
+  }
+
   .cv-btn-mt {
     margin-top: 100px;
   }
@@ -148,7 +152,7 @@ body {
 }
 
 .navbar {
-    min-width: 400px;
+    min-width: 280px;
 }
 
 .dropdown-item {
@@ -585,19 +589,19 @@ form {
 
 
 /*navbar solo con schermi >600px*/
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .sticky-top-nav {
         display: none;
     }
-}
+} */
 
 /*navbar sticky solo con schermi >600px*/
-@media (min-width: 600px) {
+
     .sticky-top-nav {
         position: sticky;
-        top: 20;
+        top: 75px;
     }
-}
+
 
 
 /*header sticky-top solo da 0-600*/
@@ -768,3 +772,7 @@ form {
 .mobile-icon {
     width: 50px;
 }
+
+
+/* --------------hambmenu------------- */
+

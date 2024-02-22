@@ -26,7 +26,7 @@ function sendMail() {
   // Send email
   emailjs.send("service_y63b0nk", "template_islr8yl", parms)
       .then(function () {
-          alert("Email Sent Successfully!");
+          alert("Email Inviata!/Email Sent Successfully!");
           // Reloads the page once form sumbitted
           location.reload();
       })
