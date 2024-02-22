@@ -79,6 +79,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } */
+.cv-btn-mt {
+  margin-top: 100px; }
+
 .language-selection {
   display: inline-block;
   margin-left: 2rem; }
@@ -290,7 +293,7 @@ a:hover {
 
 .carousel-inner {
   box-shadow: 0 0 100px #18ffb0;
-  border-radius: 100px !important; }
+  border-radius: 100px; }
 
 .card-img-top {
   box-shadow: 0 0 5px #2cf8ff; }
@@ -300,12 +303,16 @@ a:hover {
   width: 100% !important; }
 
 .card {
-  color: #2cf8ff !important;
-  border: none;
-  background-color: transparent; }
-  .card h5 {
-    text-align: center; }
+  margin-top: 30px; }
 
+/* .card {
+    color: $blue !important;
+    border: none;
+    background-color: transparent;
+    h5 {
+        text-align: center;
+    }
+} */
 .chi-sono-container {
   margin-bottom: 20px; }
 
@@ -403,7 +410,7 @@ a:hover {
   flex-direction: column;
   max-width: 40%;
   min-width: 300px;
-  margin: 300px auto;
+  margin: 100px auto;
   box-shadow: 0 0 0.5rem #2cf8ff;
   padding: 15px;
   padding-bottom: 25px;
@@ -528,6 +535,9 @@ form label {
     }
 }*/
 @media (max-width: 550px) {
+  body {
+    overflow-x: hidden; }
+
   .row {
     display: flex;
     flex-direction: column; }
@@ -556,7 +566,14 @@ form label {
 
   .lang {
     display: flex;
-    justify-content: flex-end; } }
+    justify-content: flex-end; }
+
+  .carousel,
+  .code {
+    width: 100%; }
+
+  .carousel-inner {
+    border-radius: 40px; } }
 @media (min-width: 551px) {
   .small-screen-only {
     display: none; } }

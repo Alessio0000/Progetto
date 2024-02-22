@@ -110,6 +110,10 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   } */
+
+  .cv-btn-mt {
+    margin-top: 100px;
+  }
   
   
 
@@ -374,7 +378,7 @@ a:hover {
 
 .carousel-inner {
     box-shadow: 0 0 100px $green;
-    border-radius: 100px !important;
+    border-radius: 100px;
 }
 
 .card-img-top {
@@ -387,13 +391,17 @@ a:hover {
 }
 
 .card {
+    margin-top: 30px;
+}
+
+/* .card {
     color: $blue !important;
     border: none;
     background-color: transparent;
     h5 {
         text-align: center;
     }
-}
+} */
 
 .chi-sono-container {
     margin-bottom: 20px;
@@ -510,7 +518,7 @@ a:hover {
     flex-direction: column;
     max-width: 40%;
     min-width: 300px;
-    margin: 300px auto;
+    margin: 100px auto;
     box-shadow: 0 0 .5rem $blue;
     padding: 15px;
     padding-bottom: 25px;
@@ -696,6 +704,9 @@ form {
 
 
 @media (max-width: 550px) {
+    body {
+        overflow-x: hidden;
+    }
     .row {
         display: flex;
         flex-direction: column;
@@ -729,6 +740,15 @@ form {
     .lang {
         display: flex;
         justify-content: flex-end;
+    }
+
+    .carousel,
+    .code {
+        width: 100%;
+
+    }
+    .carousel-inner {
+        border-radius: 40px;
     }
 }
 
