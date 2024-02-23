@@ -153,6 +153,8 @@ body {
 
 .navbar {
     min-width: 280px;
+    position: sticky;
+        top: 30px;
 }
 
 .dropdown-item {
@@ -596,12 +598,12 @@ form {
 } */
 
 /*navbar sticky solo con schermi >600px*/
-
+@media (max-width: 600px) {
     .sticky-top-nav {
         position: sticky;
         top: 75px;
     }
-
+}
 
 
 /*header sticky-top solo da 0-600*/
@@ -610,6 +612,7 @@ form {
         position: sticky;
         top: 0;
     }
+    
 }
 
 /*header disappeared sopra i 600px*/

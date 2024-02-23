@@ -108,7 +108,9 @@ body {
   left: -10%; }
 
 .navbar {
-  min-width: 280px; }
+  min-width: 280px;
+  position: sticky;
+  top: 30px; }
 
 .dropdown-item {
   background-color: transparent !important;
@@ -468,10 +470,10 @@ form label {
     }
 } */
 /*navbar sticky solo con schermi >600px*/
-.sticky-top-nav {
-  position: sticky;
-  top: 75px; }
-
+@media (max-width: 600px) {
+  .sticky-top-nav {
+    position: sticky;
+    top: 75px; } }
 /*header sticky-top solo da 0-600*/
 @media only screen and (max-width: 600px) {
   .sticky-top {
