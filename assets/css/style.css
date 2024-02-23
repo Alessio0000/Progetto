@@ -9,11 +9,11 @@ body {
   font-family: "Roboto";
   font-weight: 400;
   background-color: #07141b;
-  cursor: default; }
+  cursor: default;
+  overflow-x: hidden; }
 
-.row {
-  --bs-gutter-x: 0 !important;
-  /* Set horizontal gutter to 0 */ }
+.page-wrapper {
+  margin: 0 auto; }
 
 * {
   margin: 0;
@@ -29,9 +29,11 @@ body {
 
 .alessio {
   max-width: 250px;
-  max-height: 60px; }
+  max-height: 60px;
+  min-width: 200px;
+  width: 100%; }
 
-.haeder-container {
+.header-container {
   display: flex;
   justify-content: flex-start;
   margin-left: 3vw; }
@@ -71,14 +73,6 @@ body {
 .smaller {
   font-size: 21px; }
 
-/* .text-container {
-  position: relative;
-  display: inline-block;
-  font-size: 30px;
-  background: linear-gradient(to right,$blue , $green); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
 .text-container {
   display: inline-block; }
 
@@ -310,14 +304,6 @@ a:hover {
 .card {
   margin-top: 30px; }
 
-/* .card {
-    color: $blue !important;
-    border: none;
-    background-color: transparent;
-    h5 {
-        text-align: center;
-    }
-} */
 .chi-sono-container {
   margin-bottom: 20px; }
 
@@ -414,7 +400,7 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   max-width: 40%;
-  min-width: 300px;
+  min-width: 280px;
   margin: 100px auto;
   box-shadow: 0 0 0.5rem #2cf8ff;
   padding: 15px;
@@ -463,12 +449,6 @@ form label {
   color: #2cf8ff;
   margin: 10px 0 5px 5px; }
 
-/*navbar solo con schermi >600px*/
-/* @media (max-width: 600px) {
-    .sticky-top-nav {
-        display: none;
-    }
-} */
 /*navbar sticky solo con schermi >600px*/
 @media (max-width: 600px) {
   .sticky-top-nav {
@@ -526,25 +506,7 @@ form label {
 @keyframes textclip {
   to {
     background-position: -200% center; } }
-/* @media (max-width: 500px) {
-    .home-gradient,
-    .gradient-right,
-    .bio-gradient,
-    .contact-gradient,
-    .contact-gradient-right,
-    .gradient {
-        display: none;
-    } 
-
-    .contattami {
-        max-width: 90%;
-        min-width: 250px;
-    }
-}*/
 @media (max-width: 550px) {
-  body {
-    overflow-x: hidden; }
-
   .row {
     display: flex;
     flex-direction: column; }
@@ -580,7 +542,16 @@ form label {
     width: 100%; }
 
   .carousel-inner {
-    border-radius: 40px; } }
+    border-radius: 40px; }
+
+  .contact-gradient {
+    width: 10rem; }
+
+  .bio-gradient {
+    width: 15rem; }
+
+  .home-gradient {
+    width: 16rem; } }
 @media (min-width: 551px) {
   .small-screen-only {
     display: none; } }
@@ -589,7 +560,5 @@ form label {
     display: none; } }
 .mobile-icon {
   width: 50px; }
-
-/* --------------hambmenu------------- */
 
 /*# sourceMappingURL=style.css.map */
