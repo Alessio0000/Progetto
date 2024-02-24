@@ -45,7 +45,9 @@ body {
     background-color: transparent;
     /* Semi-transparent background */
     backdrop-filter: blur(5px);
-    /* Apply a 5px blur effect to the backdrop */ } }
+    /* Apply a 5px blur effect to the backdrop */
+    -webkit-backdrop-filter: blur(5px);
+    /*Safari blur*/ } }
 .cv-btn {
   border-radius: 50px;
   height: 60px;
@@ -102,7 +104,7 @@ body {
   left: -10%; }
 
 .navbar {
-  min-width: 280px;
+  min-width: 300px;
   position: sticky;
   top: 30px; }
 
@@ -153,6 +155,9 @@ a:hover {
 
 .home {
   color: #18ffb0; }
+
+nav a {
+  text-shadow: 0 0 5px #051819; }
 
 .nav-divider {
   width: 1px;
@@ -212,10 +217,11 @@ a:hover {
 .bio-title {
   background: linear-gradient(to right, #18ffb0, #2cf8ff);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  font-size: 1.7rem; }
 
 .description {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500; }
 
 @media (min-width: 1000px) {
@@ -453,7 +459,7 @@ form label {
 @media (max-width: 600px) {
   .sticky-top-nav {
     position: sticky;
-    top: 75px; } }
+    top: 60px; } }
 /*header sticky-top solo da 0-600*/
 @media only screen and (max-width: 600px) {
   .sticky-top {
@@ -506,6 +512,14 @@ form label {
 @keyframes textclip {
   to {
     background-position: -200% center; } }
+@media (max-width: 600px) {
+  .large-screen-only {
+    display: none; }
+
+  .small-screen-only {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 10px; } }
 @media (max-width: 550px) {
   .row {
     display: flex;
@@ -524,14 +538,6 @@ form label {
 
   .contattami {
     max-width: 85%; }
-
-  .large-screen-only {
-    display: none; }
-
-  .small-screen-only {
-    display: inline-block;
-    font-size: 1.2rem;
-    margin-left: 10px; }
 
   .lang {
     display: flex;
