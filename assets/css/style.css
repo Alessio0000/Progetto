@@ -359,7 +359,8 @@ nav a {
 .ethereum-container {
   max-width: 65%; }
 
-#chi-sono {
+#chi-sono,
+#about-me {
   margin: 0 auto;
   width: 70%; }
 
