@@ -119,6 +119,7 @@ body {
   .language-selection {
     display: inline-block;
     margin-left: 2rem;
+    font-size: 26px;
   }
   
 
@@ -461,7 +462,7 @@ nav {
 }
 
 .social-container {
-    width: 65%;
+    width: 55%;
     margin: 100px auto;
     border-radius: 50px;
     display: flex;
@@ -475,16 +476,12 @@ nav {
 
 
 .footer-btn {
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
     color: #fff;
     border-right: 1px solid rgba(255,255,255,.2);
     border-left: 1px solid rgba(255,255,255,.2);
-    flex: 1;
     justify-content: center;
     align-items: center;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 1rem;
     font-weight: 500;
     transition: all .2s;
     display: flex;
@@ -503,8 +500,8 @@ nav {
 
 
 .social {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     background: $green;
     border-radius: 50%;
     transition: background 0.5s;
@@ -578,6 +575,28 @@ form {
     }
 }
 
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: 0 0 2px $green;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, $blue, $green);
+    border-radius: 10px;
+  }
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    opacity: 0.7;
+}
 
 
 /*navbar sticky solo con schermi >600px*/
@@ -675,16 +694,7 @@ form {
   }
 }
 
-@media (max-width: 600px) {
-    .large-screen-only {
-        display: none;
-    }
-    .small-screen-only {
-        display: inline-block;
-        font-size: 1.2rem;
-        margin-left: 10px;
-    }
-}
+
 @media (max-width: 550px) {
     
     .row {
@@ -711,10 +721,7 @@ form {
     }
     
     
-    .lang {
-        display: flex;
-        justify-content: flex-end;
-    }
+   
 
     .carousel,
     .code {
@@ -733,6 +740,10 @@ form {
     .home-gradient {
         width: 16rem;
     }
+
+    .cv-btn {
+        margin: 40px 0 !important; 
+    }
 }
 
 @media (min-width: 551px) {
@@ -741,7 +752,7 @@ form {
 }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 750px) {
     .default-text {
         display: none;
     }

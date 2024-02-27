@@ -1,13 +1,4 @@
-/* function sendMail(){
-  let parms = {
-    name : document.getElementById("name").value,
-    email : document.getElementById("email").value,
-    phonenumber : document.getElementById("phonenumber").value,
-    message : document.getElementById("message").value,
-  }
-
-  emailjs.send("service_y63b0nk","template_islr8yl",parms).then(alert("Email Sent Successfully!"))
-} */
+/* Function to send email with EmailJS */
 function sendMail() {
   // Check if the form is valid
   if (!document.getElementById("contact-form").checkValidity()) {
