@@ -25,9 +25,6 @@ body {
     overflow-x: hidden;
     line-height: 1.7rem;
 }
-  
-div, span, p {
-}
 
 .page-wrapper {
     margin: 0 auto;
@@ -275,6 +272,7 @@ nav {
 .bio-title {
    background: linear-gradient(to right, $green , $blue); 
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.7rem;
 }
