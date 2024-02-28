@@ -6,39 +6,32 @@ $green: #18ffb0;
 $off-white: #f1f3f4;
 $light: #96a7a1;
 $almost-black: #051819;
-$font1: "Roboto";
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-.container-page {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container-page {
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     color: $primary;
-    font-family: $font1;
-    font-weight: 400;
     background-color: rgb(7, 20, 27);
     cursor: default;
     overflow-x: hidden;
+    line-height: 1.7rem;
+}
+  
+div, span, p {
 }
 
 .page-wrapper {
     margin: 0 auto;
 }
-  
- 
-*{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-        -webkit-font-smoothing: antialiased;
-    
-}
-
-
 
 .container-f {
     display: flex;
@@ -57,7 +50,6 @@ body {
     display: flex;
     justify-content: flex-start;
     margin-left: 3vw;
-
 }
 
 
@@ -65,12 +57,11 @@ body {
     .container-f {
         justify-content: space-between;
         margin: 0 auto;
-        background-color: transparent; /* Semi-transparent background */
-        backdrop-filter: blur(5px); /* Apply a 5px blur effect to the backdrop */ 
+        background-color: transparent; 
+        backdrop-filter: blur(5px); 
         -webkit-backdrop-filter: blur(5px); /*Safari blur*/
     }
 }
-
 
 .cv-btn {
     border-radius: 50px;
@@ -100,29 +91,39 @@ body {
     min-width: 210px;
 }
 
-    .smaller {
-        font-size: 21px;
-    }
+.smaller {
+    font-size: 21px;
+}
 
-  .text-container {
+.text-container {
+  display: inline-block;
+}
+
+.cv-btn-mt {
+  margin-top: 100px;
+}
+
+.default-text {
+    background-image: linear-gradient(
+        -225deg,
+        #2cf8ff 0%,
+        #18ffb0 100%
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
     display: inline-block;
-  }
+    font-size: 28px;
+}
 
-  .cv-btn-mt {
-    margin-top: 100px;
-  }
+.language-selection {
+  display: inline-block;
+  margin-left: 2rem;
+  font-size: 26px;
+}
   
-  
-
-
-  
-  .language-selection {
-    display: inline-block;
-    margin-left: 2rem;
-    font-size: 26px;
-  }
-  
-
 .mission {
     color: #bdbdbd;
     margin-top: 20px;
@@ -132,7 +133,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 
 .bio-gradient {
     width: 20rem;
@@ -161,16 +161,12 @@ body {
     max-width: 40px   !important;
     --bs-dropdown-min-width: 1rem !important;
     --bs-dropdown-bg: transparent;
-    
   }
-
-
 
 .button-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
 }
 
 .language-dropdown-button {
@@ -209,7 +205,6 @@ a:hover {
 
 .home {
     color: #18ffb0;
-    
 }
 
 nav {
@@ -267,8 +262,8 @@ nav {
 }
 
 .contact-gradient-right {
-    width: 20rem; /* Set the width of the div */
-    height: 20rem; /* Set the height of the div to cover the entire viewport */
+    width: 20rem; 
+    height: 20rem;
     background-color: $blue;
     filter: blur(200px);
     border-radius: 30%;
@@ -289,13 +284,6 @@ nav {
     font-weight: 500;
 }
 
-@media (min-width: 1000px) {
-    .bio-container {
-    width: 500px;
-    padding: 0 1.25rem;
-}
-}
-
 .bio-container {
     max-width: 500px;
 }
@@ -304,7 +292,6 @@ nav {
     display: flex;
     justify-content: center;
     max-width: 500px;
-
 }
 
 .margin-left {
@@ -321,20 +308,16 @@ nav {
     margin-top: 20px;
     object-fit: cover;
     margin: 35px 35px;
-
-
 }
 
 .marginb {
     margin-bottom: 40px;
 }
 
-
 .green-filter {
     filter: grayscale(100%);    
 }
   
-
 .gradient-right {
     width: 20rem;
     height: 12rem;
@@ -351,6 +334,7 @@ nav {
         font-size: 4rem;
     }
 }
+
 .project {
     text-align: center;
     width: 50%;
@@ -372,7 +356,6 @@ nav {
     box-shadow: 0 0 10px $blue;
     border-radius: 10px;
 }
-
 
 .code,
 .carousel {
@@ -409,15 +392,14 @@ nav {
 .contact-signature,
 .image-container{
     
-        width: 100%; /* Set the width of the container */
-        height: auto; /* Let the height adjust automatically based on the aspect ratio */
-        overflow: hidden; /* Ensure the image doesn't overflow its container */
+        width: 100%;
+        height: auto;
+        overflow: hidden;
         display: flex;
         justify-content: center;
         img {
-            width: 100%; /* Make the image fill the container horizontally */
-            height: auto; /* Let the height adjust automatically based on the aspect ratio */
-        /*     display: block; /* Ensure the image behaves as a block element */
+            width: 100%;
+            height: auto; 
             max-width: 300px;
         }
 }
@@ -433,6 +415,7 @@ nav {
 .token.selected {
     text-shadow: none !important;
 }
+
 /* Sovrascrivi il colore del testo delle variabili */
 .language-solidity,
 .token.variable {
@@ -448,8 +431,6 @@ nav {
 .token.operator {
     background: none !important;
 }
-
-
 
 .ethereum-container {
     max-width: 65%;
@@ -469,11 +450,6 @@ nav {
     align-items: center;
     justify-content: space-around;
 }
-
-.footer {
-}
-
-
 
 .footer-btn {
     color: #fff;
@@ -496,8 +472,6 @@ nav {
         background: rgba($blue, 0.5)
     }
 }
-
-
 
 .social {
     width: 45px;
@@ -575,29 +549,24 @@ form {
     }
 }
 
-
-/* width */
-::-webkit-scrollbar {
-    width: 8px;
-    background-color: transparent;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: 0 0 2px $green;
-    border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, $blue, $green);
-    border-radius: 10px;
-  }
-  /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    opacity: 0.7;
+.mobile-icon {
+    width: 50px;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: 0 0 2px $green;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, $blue, $green);
+  border-radius: 10px;
+}
 
 /*navbar sticky solo con schermi >600px*/
 @media (max-width: 600px) {
@@ -607,14 +576,12 @@ form {
     }
 }
 
-
 /*header sticky-top solo da 0-600*/
 @media only screen and (max-width: 600px) {
     .sticky-top {
         position: sticky;
         top: 0;
     }
-    
 }
 
 /*header disappeared sopra i 600px*/
@@ -623,15 +590,6 @@ form {
         position: relative;
     }
 }
-
-/*Hamb. menu solo con schermi piccoli 0-600*/
-@media (min-width: 600px) {
-    .toggle{
-        display: none;
-    }
-}
-
-
 
 @media (min-width: 1400px) {
     .page-wrapper {
@@ -672,28 +630,11 @@ form {
     animation-delay: 0.5s;
 }
 
-    .default-text {
-    background-image: linear-gradient(
-        -225deg,
-        #2cf8ff 0%,
-        #18ffb0 100%
-    );
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 3s linear infinite;
-    display: inline-block;
-    font-size: 28px;
-    
-}
-
 @keyframes textclip {
   to {
     background-position: -200% center;
   }
 }
-
 
 @media (max-width: 550px) {
     
@@ -719,14 +660,10 @@ form {
     .contattami {
         max-width: 85%;
     }
-    
-    
    
-
     .carousel,
     .code {
         width: 100%;
-
     }
     .carousel-inner {
         border-radius: 40px;
@@ -756,10 +693,12 @@ form {
     .default-text {
         display: none;
     }
-        
 }
 
-.mobile-icon {
-    width: 50px;
+@media (min-width: 1000px) {
+    .bio-container {
+    width: 500px;
+    padding: 0 1.25rem;
+    }
 }
 

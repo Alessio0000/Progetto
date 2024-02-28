@@ -1,26 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-.container-page {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  color: #fff;
-  font-family: "Roboto";
-  font-weight: 400;
-  background-color: #07141b;
-  cursor: default;
-  overflow-x: hidden; }
-
-.page-wrapper {
-  margin: 0 auto; }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased; }
+
+.container-page {
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  color: #fff;
+  background-color: #07141b;
+  cursor: default;
+  overflow-x: hidden;
+  line-height: 1.7rem; }
+
+.page-wrapper {
+  margin: 0 auto; }
 
 .container-f {
   display: flex;
@@ -43,9 +38,7 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     background-color: transparent;
-    /* Semi-transparent background */
     backdrop-filter: blur(5px);
-    /* Apply a 5px blur effect to the backdrop */
     -webkit-backdrop-filter: blur(5px);
     /*Safari blur*/ } }
 .cv-btn {
@@ -80,6 +73,16 @@ body {
 
 .cv-btn-mt {
   margin-top: 100px; }
+
+.default-text {
+  background-image: linear-gradient(-225deg, #2cf8ff 0%, #18ffb0 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 28px; }
 
 .language-selection {
   display: inline-block;
@@ -205,9 +208,7 @@ nav a {
 
 .contact-gradient-right {
   width: 20rem;
-  /* Set the width of the div */
   height: 20rem;
-  /* Set the height of the div to cover the entire viewport */
   background-color: #2cf8ff;
   filter: blur(200px);
   border-radius: 30%;
@@ -225,10 +226,6 @@ nav a {
   font-size: 1.5rem;
   font-weight: 500; }
 
-@media (min-width: 1000px) {
-  .bio-container {
-    width: 500px;
-    padding: 0 1.25rem; } }
 .bio-container {
   max-width: 500px; }
 
@@ -318,21 +315,15 @@ nav a {
 .contact-signature,
 .image-container {
   width: 100%;
-  /* Set the width of the container */
   height: auto;
-  /* Let the height adjust automatically based on the aspect ratio */
   overflow: hidden;
-  /* Ensure the image doesn't overflow its container */
   display: flex;
   justify-content: center; }
   .chi-sono-container img,
   .contact-signature img,
   .image-container img {
     width: 100%;
-    /* Make the image fill the container horizontally */
     height: auto;
-    /* Let the height adjust automatically based on the aspect ratio */
-    /*     display: block; /* Ensure the image behaves as a block element */
     max-width: 300px; }
 
 .language-solidity {
@@ -453,24 +444,20 @@ form label {
   color: #2cf8ff;
   margin: 10px 0 5px 5px; }
 
-/* width */
+.mobile-icon {
+  width: 50px; }
+
 ::-webkit-scrollbar {
   width: 8px;
   background-color: transparent; }
 
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: 0 0 2px #18ffb0;
   border-radius: 10px; }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, #2cf8ff, #18ffb0);
   border-radius: 10px; }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  opacity: 0.7; }
 
 /*navbar sticky solo con schermi >600px*/
 @media (max-width: 600px) {
@@ -486,10 +473,6 @@ form label {
 @media only screen and (min-width: 600px) {
   .sticky-top {
     position: relative; } }
-/*Hamb. menu solo con schermi piccoli 0-600*/
-@media (min-width: 600px) {
-  .toggle {
-    display: none; } }
 @media (min-width: 1400px) {
   .page-wrapper {
     max-width: 1400px;
@@ -515,16 +498,6 @@ form label {
 .l-r {
   animation: slideRight .8s ease-out forwards;
   animation-delay: 0.5s; }
-
-.default-text {
-  background-image: linear-gradient(-225deg, #2cf8ff 0%, #18ffb0 100%);
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 3s linear infinite;
-  display: inline-block;
-  font-size: 28px; }
 
 @keyframes textclip {
   to {
@@ -572,7 +545,9 @@ form label {
 @media (max-width: 750px) {
   .default-text {
     display: none; } }
-.mobile-icon {
-  width: 50px; }
+@media (min-width: 1000px) {
+  .bio-container {
+    width: 500px;
+    padding: 0 1.25rem; } }
 
 /*# sourceMappingURL=style.css.map */
